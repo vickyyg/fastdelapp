@@ -1,0 +1,94 @@
+.navbar{
+    padding: 20px 0px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 150px;
+    height: 100px;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: rgb(78, 77, 75);
+    font-size: 18px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-right img{
+    height: 40px;
+    width: 40px;
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: rgb(66, 66, 65);
+    border: 1px solid rgb(68, 66, 66);
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.navbar button:hover{
+    background-color: rgb(243, 247, 248);
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+     position: absolute;
+     min-width: 10px;
+     min-height: 10px;
+     background-color: rgb(255, 0, 0);
+     border-radius: 5px;
+     top: -8px;
+     right: -8px;
+}
+
+@media (max-width:900px) {
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:750px) {
+    .navbar-menu{
+        display: none;
+    }
+}
